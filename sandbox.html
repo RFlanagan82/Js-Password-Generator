@@ -57,18 +57,19 @@
 
             if // return randomized generatePassword Function
                 //Create the function that allows me to call (run) the loop for any array we wish.
-                function consoleInside(arr) {
+
+                // Here I call the function to run my for-loop on each of the following arrays.
+                generatePassword(assignedLowercase);
+                generatePassword(assignedUppercase);
+                generatePassword(assignedNum);
+                generatePassword(assignedSpecial);
+                generatePassword(characterCount);
+
+                function generatePassword(arr) { //
                     for (var 1=0; i <characterCount.length; i++) // Question: is it 'arr' length or characterCount length?
                 console.log(arr[i]);
-            }
-        
-            // Here I call the function to run my for-loop on each of the following arrays.
-            consoleInside(assignedLowercase);
-            consoleInside(assignedUppercase);
-            consoleInside(assignedNum);
-            consoleInside(assignedSpecial);
-            consoleInside(characterCount);
-
+                return(generatePassword) // Question: how do I format this?
+                }
 
             else if  prompt("You need to choose at least one of the following: lowercase, uppercase, numbers, or special characters.");
             else confirm("Do you want to start over?");
