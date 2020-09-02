@@ -11,15 +11,21 @@
         <script type="text/javascript">
 
         //Various Arrays
+            var assignedNum = []
+            var assignedSpecial = []
+            var assignedUppercase = []
             var assignedLowercase = []    
-            var lowercase = ["a", "b", "c", "d", "e", "f", "g","h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+            var lowercase = ["a", "b", "c", "d", "e", "f", "g","h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]           
+            var uppercase = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+            var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            var specialCharacters = ["!", "#", "$", "%", "*", "&", "+", "@", "?", "~"]
         
         //Asks the user to provide a desired number of characters for a password generator
             var characterCount = prompt("Choose a desired length between 8 and 128 characters.");
         
         //Print out the number that the user selects
             console.log(characterCount);
-        
+
         //Alert the user to confirm their number of characters
             alert("You have chosen " + characterCount);
         
@@ -28,10 +34,11 @@
 
         // Now I need to set up the conditional If/Else based on their action...
 
-            if {let assignedLowercase = lowercase[Math.floor(Math.random() * lowercase.length)]; //Stumped here :(
-            }
+            if // randomize the lowercase array and assign it to 'assignedLowercase'
+            //Randomly chooses a choice from the lowercase array.
+            var assignedLowercase = lowercase[Math.floor(Math.random() * lowercase.length)];
             console.log(assignedLowercase);
-
+            else //go to next question
         
             // Ask the user if they want to include uppercase letters
             var assignedUppercase = confirm("Do you want to include uppercase letters?"); 
@@ -49,6 +56,20 @@
             var assignedSpecial = confirm("Do you want to include special characters?"); 
 
             if // return randomized generatePassword Function
+                //Create the function that allows me to call (run) the loop for any array we wish.
+                function consoleInside(arr) {
+                    for (var 1=0; i <characterCount.length; i++) // Question: is it 'arr' length or characterCount length?
+                console.log(arr[i]);
+            }
+        
+            // Here I call the function to run my for-loop on each of the following arrays.
+            consoleInside(assignedLowercase);
+            consoleInside(assignedUppercase);
+            consoleInside(assignedNum);
+            consoleInside(assignedSpecial);
+            consoleInside(characterCount);
+
+
             else if  prompt("You need to choose at least one of the following: lowercase, uppercase, numbers, or special characters.");
             else confirm("Do you want to start over?");
                 // if - rerun application
