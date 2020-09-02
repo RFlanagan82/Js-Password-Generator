@@ -57,14 +57,35 @@ function generatePassword(){
             // -->provide an alert to show the user that we've logged their entry
 
         //Part 2: Record Password Preferences usings Confirms and Conditional Statements
-            //First create For loop for var lowercase and assign a random letter as a string to var chosenLowercase.
+            //a. First confirm whether or not the user wants to include lowercase characters in their password.
+            
+                // If they do then I need to create a For loop for var lowercase and assign a random letter as a string to var assignedLowercase.
+
+                // EXAMPLE
                 // for (var = 0; i<lowercase.length; i++) {
                 //       var assignedLowercase = Math.floor(Math.random() * lowercase.length)];
                 //    console.log(assignedLowercase)
                 //    } --> This loops the items in the lowercase array and assigns input as chosen
 
+            //b.  If they do not then I want to progress to the next confirm question: "Do you want to include uppercase letters?"
+
+                // If they want uppercase letters then I need to create a For loop for var uppercase and assign a random letter as a string to var assignedLowercase.
+
+                // EXAMPLE
+                // for (var = 0; i<lowercase.length; i++) {
+                //       var assignedLowercase = Math.floor(Math.random() * lowercase.length)];
+                //    console.log(assignedLowercase)
+                //    } --> This loops the items in the lowercase array and assigns input as chosen
+
+            // Tip: I also need to concatenate random lowercase letter with random lowercase letter if both confirms have been selected
 
 
+
+
+
+
+
+            // At the end I need to do a For loop that takes in the total characterCount they inputted and return a random combination of their confirm selections.
 
 
 

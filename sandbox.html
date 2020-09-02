@@ -9,6 +9,10 @@
     </head>
     <body>
         <script type="text/javascript">
+
+        //Various Arrays
+            var assignedLowercase = []    
+            var lowercase = ["a", "b", "c", "d", "e", "f", "g","h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         
         //Asks the user to provide a desired number of characters for a password generator
             var characterCount = prompt("Choose a desired length between 8 and 128 characters.");
@@ -19,7 +23,15 @@
         //Alert the user to confirm their number of characters
             alert("You have chosen " + characterCount);
         
-        
+        // Ask the user if they want to include lowercase letters
+            var assignedLowercase = confirm("Do you want to include lowercase letters?"); 
+
+        // Now I need to set up the conditional If/Else for this boolean...
+
+            if {let assignedLowercase = lowercase[Math.floor(Math.random() * lowercase.length)]; //Stumped here :(
+            }
+            console.log(assignedLowercase);
+            
         </script>
     </body>
 </html>
