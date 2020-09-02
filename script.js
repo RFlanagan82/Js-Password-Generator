@@ -33,6 +33,14 @@ function writePassword() {
 }
 
 function generatePassword(){
+    //TODO: Generate a Real Password and Replace the Return String with a Real Password String
+    return "THIS IS NOT MY FINAL PASSWORD!" //needs to be executed as a string!
+
+
+
+
+
+
     //All MY CODE GOES HERE
 
 
@@ -85,8 +93,8 @@ function generatePassword(){
 
 
 
-            // At the end I need to do a For loop that takes in the total characterCount they inputted and return a random combination of their confirm selections.
-            
+            // At the end I need to do a For loop that takes in the total characterCount they inputted and return a random combination of their confirm selections as a String.
+
 
 
 
