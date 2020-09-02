@@ -86,6 +86,7 @@ function generatePassword(){
 
 
             // At the end I need to do a For loop that takes in the total characterCount they inputted and return a random combination of their confirm selections.
+            
 
 
 
