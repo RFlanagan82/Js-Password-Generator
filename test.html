@@ -11,6 +11,7 @@
         <script type="text/javascript">
 
         //Various Arrays
+            var characterCount = []
             var assignedNum = []
             var assignedSpecial = []
             var assignedUppercase = []
@@ -22,16 +23,22 @@
             var specialCharacters = ["!", "#", "$", "%", "*", "&", "+", "@", "?", "~"]
         
         //Asks the user to provide a desired number of characters for a password generator
-            var characterCount = prompt("Choose a desired length between 8 and 128 characters."); // Question: How to we force the response to be a number and not a string?
-        
+            var characterCount = prompt("Choose a desired number of password characters between 8 and 128."); // Question: How to we force the response to be a number and not a string?
+
+              // If they provide a valid number
+            if (characterCount >= 8 && characterCount <= 128) {
+            alert("Thanks. You have chosen " + characterCount);
+            }
+        // Else if the user was born after 1997, alert "No Sake for you!"
+            else {
+            alert("Your response must be a number between 8 and 128.");
+            prompt("Choose a desired number between 8 and 128")
+            }
         //Print out the number that the user selects
             console.log(characterCount);
 
-        //Alert the user to confirm their number of characters
-            alert("You have chosen " + characterCount);
+            
         
-        // Ask the user if they want to include lowercase letters
-            var assignedLowercase = confirm("Do you want to include lowercase letters?"); 
 
         </script>
     </body>
