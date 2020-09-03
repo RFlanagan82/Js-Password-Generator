@@ -10,35 +10,47 @@
     <body>
         <script type="text/javascript">
 
-        //Various Arrays
-            var characterCount = []
-            var assignedNum = []
-            var assignedSpecial = []
-            var assignedUppercase = []
-            var assignedLowercase = []
-                
-            var lowercase = ["a", "b", "c", "d", "e", "f", "g","h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y","z"]           
-            var uppercase = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-            var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-            var specialCharacters = ["!", "#", "$", "%", "*", "&", "+", "@", "?", "~"]
-        
-        //Asks the user to provide a desired number of characters for a password generator
-            var characterCount = prompt("Choose a desired number of password characters between 8 and 128."); // Question: How to we force the response to be a number and not a string?
+        //generate random password
+            function writePassword() 
 
-              // If they provide a valid number
+        
+        //Set password length
+            //Asks the user to provide a desired number of characters for a password generator
+            var characterCount = prompt("Choose a desired number of password characters between 8 and 128.");
+
+        // If they provide a valid number that meets the criteria below alert them that we have recieved it and log it to the console.
             if (characterCount >= 8 && characterCount <= 128) {
             alert("Thanks. You have chosen " + characterCount);
-            }
-        // Else if the user was born after 1997, alert "No Sake for you!"
-            else {
-            alert("Your response must be a number between 8 and 128.");
-            prompt("Choose a desired number between 8 and 128")
-            }
-        //Print out the number that the user selects
             console.log(characterCount);
 
-            
-        
+            //Does the for loop go here?
+            }
+
+        // Else - Remind them that their response must be a number between 8 and 128 and to re-prompt.
+            else {
+            alert("Your response must be a number between 8 and 128.");
+            prompt("Choose a desired number between 8 and 128");
+            }
+
+            // Define the possible password values 
+            var upper = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+            var lower = ["abcdefghijklmnopqrstuvwxyz"];
+            var numbers = ["123456789"];
+            var special = ["!@#$%^&*~+{/;]}"];
+            var password = []; 
+
+        //Create a For-loop to create a randomized set of character values up to the total number defined in characterCount
+            // for (var i = 0; i < characterCount.length; i++) {
+                // var password = password + lower.charAt(Math.floor(Math.random() * Math.floor(value.length - 1)));
+                // }
+
+                console.log(password);
+
+        // Write password to the #password input
+            function writePassword() {
+            var password = generatePassword();
+            var passwordText = document.querySelector("#password");
+            }        
 
         </script>
     </body>
