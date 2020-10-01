@@ -37,7 +37,7 @@ I also knew that the function needed a Math.random and Math.floor property for m
 
 Eventually I was able to get each of the prompts to work.
 
-1. ![]()(./assets/Choose-a-desired-number-of-pw-characters.png)
+1. ![](./assets/Choose-a-desired-number-of-pw-characters.png)
 
 
 2. ![](./assets/Prompt-for-uppercase-letters.png)
