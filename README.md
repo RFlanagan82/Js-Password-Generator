@@ -35,6 +35,17 @@ I knew that I needed it to loop for as long as the passwordLength variable was c
 
 I also knew that the function needed a Math.random and Math.floor property for my mergedValues variable but unsure how to account for the mergedValues length or where the result should be mapped to.
 
+Eventually I was able to get each of the prompts to work.
+
+1. ![]()(./assets/Choose-a-desired-number-of-pw-characters.png)
+
+
+2. ![](./assets/Prompt-for-uppercase-letters.png)
+
+
+3. ![](./assets/Generated-password.png)
+
+
 ## Contributions / Credits
 
 On 9-3-2020, I worked with Christina Starr who helped me improve my array structures for the possible characters to be used. Reference lines 15-18.
