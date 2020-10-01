@@ -19,6 +19,9 @@ The accepted criteria is found here:
 
 All of the files necesary to run this website are available in [this repository](https://github.com/RFlanagan82/Js-Password-Generator).
 
+## Link to Deployed Application
+[Click here to access the Password Generator](https://rflanagan82.github.io/Js-Password-Generator/)
+
 ## Outstanding Issues
 
 Initially I struggled with my array values because I didn't define each item within as a string in quotations. Working with Christina Starr helped me remember that these elements needed to be in quotes.
